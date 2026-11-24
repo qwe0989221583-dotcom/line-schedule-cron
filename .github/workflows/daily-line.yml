@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: Call Apps Script Web App
         run: |
-          curl -sSL "https://script.google.com/macros/s/AKfycbyr3IuDyrO85r8H0Gn-YV2cO35jFx9PbVoV8CW0Uon8J2kAI2Wp_1nsC0anLHTJjev2nw/exec?key=班務
+          curl -sSL "https://script.google.com/macros/s/AKfycbyr3IuDyrO85r8H0Gn-YV2cO35jFx9PbVoV8CW0Uon8J2kAI2Wp_1nsC0anLHTJjev2nw/exec?key=班務"
