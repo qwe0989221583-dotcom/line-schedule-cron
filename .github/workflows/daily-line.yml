@@ -1,0 +1,15 @@
+name: Send Tomorrow Schedule at 20:00 TST
+
+on:
+  schedule:
+    # 台灣時間 20:00 (UTC+8) = 世界協調時間 12:00 (UTC+0)
+    - cron: '0 12 * * *'
+  workflow_dispatch:
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call Apps Script Web App
+        run: |
+          curl -sSL "https://script.google.com/macros/s/AKfycbyr3IuDyrO85r8H0Gn-YV2cO35jFx9PbVoV8CW0Uon8J2kAI2Wp_1nsC0anLHTJjev2nw/exec?key=班務
